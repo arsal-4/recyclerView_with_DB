@@ -74,8 +74,6 @@ public class DbHelper extends SQLiteOpenHelper {
                 int age=res.getInt(2);
                 data.add(new Employee(age,name));
             }while(res.moveToNext());
-        }else{
-
         }
         res.close();
         return data;
