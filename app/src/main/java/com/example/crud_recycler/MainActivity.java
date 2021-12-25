@@ -55,14 +55,19 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+
     }
 
     private void setAdapter(){
-        com.example.crud_recycler.EmpAdapter adapter=new EmpAdapter(data,this);
+        EmpAdapter adapter=new EmpAdapter(data,this);
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
     }
+
 
 }
